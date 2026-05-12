@@ -11,9 +11,13 @@ while True:
         "gas_level": random.randint(20, 500)
     }
 
-    response = requests.post(BACKEND_URL, json=data)
+    try:
+        response = requests.post(BACKEND_URL, json=data)
 
-    print("Sent:", data)
-    print("Response:", response.json())
+        print("Sent:", data)
+        print("Server:", response.json())
+
+    except Exception as e:
+        print("Error:", e)
 
     time.sleep(5)
