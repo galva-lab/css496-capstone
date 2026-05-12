@@ -1,0 +1,19 @@
+import requests
+import random
+import time
+
+BACKEND_URL = "http://127.0.0.1:8000/sensor-data"
+
+while True:
+    data = {
+        "motion": random.choice([True, False]),
+        "sound_level": random.randint(30, 120),
+        "gas_level": random.randint(20, 500)
+    }
+
+    response = requests.post(BACKEND_URL, json=data)
+
+    print("Sent:", data)
+    print("Response:", response.json())
+
+    time.sleep(5)
