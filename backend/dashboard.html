@@ -9,24 +9,69 @@
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { font-family: 'Courier New', monospace; background: #070b12; color: #c8d8e8; min-height: 100vh; padding: 24px; }
 
-  header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 28px; border-bottom: 1px solid #1a2a3a; padding-bottom: 16px; }
+  header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; border-bottom: 1px solid #1a2a3a; padding-bottom: 16px; }
   header h1 { font-size: 15px; font-weight: normal; letter-spacing: 0.12em; color: #00d4ff; text-transform: uppercase; }
-
   .header-right { display: flex; align-items: center; gap: 16px; }
-
   .node-badges { display: flex; gap: 6px; }
   .nbadge { display: flex; align-items: center; gap: 5px; font-size: 10px; font-weight: bold; letter-spacing: 0.08em; padding: 3px 8px; border-radius: 10px; background: #0a0a14; color: #334; border: 1px solid #1a1a2e; transition: all 0.3s; }
   .nbadge.live    { background: #001a08; color: #00cc66; border-color: #003310; }
   .nbadge.offline { background: #1a0000; color: #442; border-color: #2a1a1a; }
   .nbadge .dot    { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
-
   .status-bar { display: flex; align-items: center; gap: 8px; font-size: 12px; color: #456; }
   .dot { width: 7px; height: 7px; border-radius: 50%; background: #1a3a1a; transition: background 0.3s; }
   .dot.live  { background: #00ff88; box-shadow: 0 0 6px #00ff8866; }
   .dot.error { background: #ff4444; }
 
-  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 24px; }
+  /* ── Occupancy banner ── */
+  .occupancy-banner {
+    display: flex; align-items: center; justify-content: space-between;
+    background: #0d1520; border: 1px solid #1a2a3a; border-radius: 8px;
+    padding: 14px 20px; margin-bottom: 20px;
+    position: relative; overflow: hidden;
+    transition: border-color 0.4s, background 0.4s;
+  }
+  .occupancy-banner::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: #1a2a3a; transition: background 0.4s;
+  }
+  .occupancy-banner.occupied         { background: #080f08; border-color: #003310; }
+  .occupancy-banner.occupied::before { background: #00ff88; }
+  .occupancy-banner.alert            { background: #120800; border-color: #663300; }
+  .occupancy-banner.alert::before    { background: #ffaa00; }
+  .occupancy-banner.danger           { background: #120000; border-color: #440000; }
+  .occupancy-banner.danger::before   { background: #ff4444; animation: pulse 1s infinite; }
 
+  @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.4; } }
+
+  .occ-left { display: flex; align-items: center; gap: 16px; }
+  .occ-status { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #456; margin-bottom: 4px; }
+  .occ-label {
+    font-size: 20px; font-weight: bold; color: #3a5a3a; letter-spacing: 0.08em;
+    transition: color 0.3s;
+  }
+  .occ-label.occupied { color: #00ff88; }
+  .occ-label.alert    { color: #ffaa00; }
+  .occ-label.danger   { color: #ff4444; }
+
+  .occ-timer { text-align: center; }
+  .occ-timer-val {
+    font-size: 40px; font-weight: bold; font-family: 'Courier New', monospace;
+    color: #2a4a2a; letter-spacing: 0.04em; transition: color 0.3s;
+    line-height: 1;
+  }
+  .occ-timer-val.occupied { color: #00ff88; }
+  .occ-timer-val.alert    { color: #ffaa00; }
+  .occ-timer-val.danger   { color: #ff4444; }
+  .occ-timer-label { font-size: 10px; color: #456; letter-spacing: 0.1em; text-transform: uppercase; margin-top: 3px; }
+
+  .occ-right { text-align: right; }
+  .occ-stat { font-size: 11px; color: #456; margin-bottom: 4px; }
+  .occ-stat span { color: #aabbcc; font-weight: bold; }
+  .occ-progress-wrap { width: 160px; background: #0a0a18; border-radius: 4px; height: 4px; margin-top: 8px; overflow: hidden; }
+  .occ-progress-fill { height: 100%; border-radius: 4px; background: #2a4a2a; transition: width 0.6s ease, background 0.4s; }
+
+  /* ── Cards ── */
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(155px, 1fr)); gap: 12px; margin-bottom: 20px; }
   .card { background: #0d1520; border: 1px solid #1a2a3a; border-radius: 8px; padding: 16px; position: relative; overflow: hidden; }
   .card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: #1a2a3a; transition: background 0.4s; }
   .card.motion-on::before  { background: #00ff88; }
@@ -39,42 +84,39 @@
   .card.threat-low::before    { background: #00ff88; }
   .card.threat-medium::before { background: #ffaa00; }
   .card.threat-high::before   { background: #ff4444; }
-
   .card-label { font-size: 10px; letter-spacing: 0.15em; color: #456; text-transform: uppercase; margin-bottom: 10px; }
   .card-value { font-size: 28px; font-weight: bold; letter-spacing: -0.02em; color: #e0f0ff; line-height: 1; }
   .card-unit  { font-size: 11px; color: #456; margin-top: 4px; letter-spacing: 0.08em; }
   .node-tag   { position: absolute; top: 8px; right: 10px; font-size: 9px; color: #2a4a6a; letter-spacing: 0.06em; }
-
   .motion-badge { display: inline-block; padding: 4px 10px; border-radius: 4px; font-size: 12px; letter-spacing: 0.1em; font-weight: bold; background: #0d2010; color: #3a5a3a; border: 1px solid #1a3a1a; transition: all 0.3s; }
   .motion-badge.active { background: #002210; color: #00ff88; border-color: #00ff4433; }
-
   .threat-badge { display: inline-block; padding: 4px 10px; border-radius: 4px; font-size: 12px; letter-spacing: 0.1em; font-weight: bold; }
   .threat-low    { background: #001a08; color: #00cc66; border: 1px solid #00661a; }
   .threat-medium { background: #1a1200; color: #ffaa00; border: 1px solid #664400; }
   .threat-high   { background: #1a0000; color: #ff4444; border: 1px solid #660000; }
-
-  .gas-ok   { color: #00cc66; }
-  .gas-warn { color: #ffaa00; }
+  .gas-ok         { color: #00cc66; }
+  .gas-warn       { color: #ffaa00; }
   .gas-danger-val { color: #ff4444; }
 
-  .charts { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px; }
+  /* ── Charts ── */
+  .charts { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px; }
   @media (max-width: 700px) { .charts { grid-template-columns: 1fr; } }
-
   .chart-box { background: #0d1520; border: 1px solid #1a2a3a; border-radius: 8px; padding: 16px; }
   .chart-title { font-size: 10px; letter-spacing: 0.15em; color: #456; text-transform: uppercase; margin-bottom: 12px; }
-  .chart-wrap { position: relative; height: 160px; }
+  .chart-wrap { position: relative; height: 150px; }
 
+  /* ── Log ── */
   .log-box { background: #0d1520; border: 1px solid #1a2a3a; border-radius: 8px; padding: 16px; }
   .log-title { font-size: 10px; letter-spacing: 0.15em; color: #456; text-transform: uppercase; margin-bottom: 12px; display: flex; justify-content: space-between; }
   .log-entries { font-size: 11px; line-height: 1.8; color: #456; max-height: 180px; overflow-y: auto; }
-
-  .log-row    { display: grid; grid-template-columns: 150px 65px 70px 75px 70px 65px auto; gap: 6px; padding: 3px 0; border-bottom: 1px solid #111820; }
-  .log-header { display: grid; grid-template-columns: 150px 65px 70px 75px 70px 65px auto; gap: 6px; padding: 0 0 6px 0; border-bottom: 1px solid #1a2a3a; margin-bottom: 4px; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #2a4a6a; }
+  .log-row    { display: grid; grid-template-columns: 150px 65px 70px 75px 65px 65px 70px auto; gap: 6px; padding: 3px 0; border-bottom: 1px solid #111820; }
+  .log-header { display: grid; grid-template-columns: 150px 65px 70px 75px 65px 65px 70px auto; gap: 6px; padding: 0 0 6px 0; border-bottom: 1px solid #1a2a3a; margin-bottom: 4px; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #2a4a6a; }
   .log-row:last-child { border-bottom: none; }
   .log-ts { color: #2a4a6a; }
   .log-motion-y { color: #00ff88; } .log-motion-n { color: #2a4a2a; }
   .log-hr  { color: #ff4466; } .log-br { color: #ffaa00; }
   .log-ps  { color: #00d4ff; } .log-gas { color: #ccaa00; }
+  .log-dur { color: #00ff88; }
 
   #error-msg { display: none; background: #1a0000; border: 1px solid #440000; color: #ff4444; border-radius: 6px; padding: 10px 14px; font-size: 12px; margin-bottom: 16px; }
 </style>
@@ -98,6 +140,28 @@
 
 <div id="error-msg">Cannot reach FastAPI at <strong>http://127.0.0.1:8000</strong>. Make sure it is running.</div>
 
+<!-- Occupancy Banner -->
+<div class="occupancy-banner" id="occ-banner">
+  <div class="occ-left">
+    <div>
+      <div class="occ-status">Restroom Status</div>
+      <div class="occ-label" id="occ-label">VACANT</div>
+    </div>
+    <div class="occ-timer">
+      <div class="occ-timer-val" id="occ-timer">00:00</div>
+      <div class="occ-timer-label">Time in room</div>
+    </div>
+  </div>
+  <div class="occ-right">
+    <div class="occ-stat">Sessions today: <span id="occ-sessions">0</span></div>
+    <div class="occ-stat">Sound spikes: <span id="occ-spikes">0</span></div>
+    <div class="occ-stat">Last session: <span id="occ-last">--</span></div>
+    <div class="occ-progress-wrap">
+      <div class="occ-progress-fill" id="occ-progress" style="width:0%"></div>
+    </div>
+  </div>
+</div>
+
 <div class="cards">
   <div class="card" id="card-motion">
     <div class="node-tag">CSI #1+#2</div>
@@ -105,48 +169,41 @@
     <div class="card-value"><span class="motion-badge" id="motion-badge">--</span></div>
     <div class="card-unit" id="motion-sub">&nbsp;</div>
   </div>
-
   <div class="card presence">
     <div class="node-tag">CSI #1+#2</div>
     <div class="card-label">Presence Score</div>
     <div class="card-value" id="val-presence">--</div>
     <div class="card-unit">Wi-Fi signal disturbance</div>
   </div>
-
   <div class="card heartrate">
     <div class="node-tag">CSI #1+#2</div>
     <div class="card-label">Heart Rate</div>
     <div class="card-value" id="val-hr">--</div>
-    <div class="card-unit">BPM</div>
+    <div class="card-unit">BPM (estimated)</div>
   </div>
-
   <div class="card breathing">
     <div class="node-tag">CSI #1+#2</div>
     <div class="card-label">Breathing Rate</div>
     <div class="card-value" id="val-br">--</div>
     <div class="card-unit">breaths / min</div>
   </div>
-
   <div class="card gas" id="card-gas">
     <div class="node-tag">MQ-135 #3</div>
     <div class="card-label">Air Quality</div>
     <div class="card-value gas-ok" id="val-gas">--</div>
     <div class="card-unit" id="gas-unit">ppm index</div>
   </div>
-
   <div class="card sound">
     <div class="node-tag">KY-037 #3</div>
     <div class="card-label">Noise Level</div>
     <div class="card-value" id="val-sound" style="color:#aa88ff;">--</div>
     <div class="card-unit">dB</div>
   </div>
-
   <div class="card" id="card-threat">
     <div class="card-label">Threat Level</div>
     <div class="card-value"><span class="threat-badge threat-low" id="threat-badge">--</span></div>
     <div class="card-unit" id="alert-text">&nbsp;</div>
   </div>
-
   <div class="card">
     <div class="node-tag">CSI #1+#2</div>
     <div class="card-label">Signal Strength</div>
@@ -157,16 +214,12 @@
 
 <div class="charts">
   <div class="chart-box">
-    <div class="chart-title">Heart rate &amp; breathing — last 30 readings</div>
-    <div class="chart-wrap">
-      <canvas id="vitals-chart" role="img" aria-label="Heart rate and breathing rate over time">Heart rate and breathing rate trend.</canvas>
-    </div>
+    <div class="chart-title">Occupancy duration — current &amp; history (seconds)</div>
+    <div class="chart-wrap"><canvas id="occ-chart" role="img" aria-label="Occupancy duration over time">Occupancy duration trend.</canvas></div>
   </div>
   <div class="chart-box">
     <div class="chart-title">Gas level &amp; presence score — last 30 readings</div>
-    <div class="chart-wrap">
-      <canvas id="env-chart" role="img" aria-label="Gas level and presence score over time">Gas and presence trend.</canvas>
-    </div>
+    <div class="chart-wrap"><canvas id="env-chart" role="img" aria-label="Gas and presence over time">Gas and presence trend.</canvas></div>
   </div>
 </div>
 
@@ -176,7 +229,7 @@
     <span id="log-count">0 entries</span>
   </div>
   <div class="log-header">
-    <span>Timestamp</span><span>Motion</span><span>HR</span><span>Breathing</span><span>Presence</span><span>Gas</span><span>Threat</span>
+    <span>Timestamp</span><span>Motion</span><span>HR</span><span>Breathing</span><span>Gas</span><span>Spikes</span><span>Duration</span><span>Threat</span>
   </div>
   <div class="log-entries" id="log-entries">
     <div style="color:#2a4a6a; padding: 8px 0;">Waiting for data...</div>
@@ -186,12 +239,11 @@
 <script>
 const API = 'http://127.0.0.1:8000';
 const MAX = 30;
-const labels=[], hrData=[], brData=[], psData=[], gasData=[];
+const labels=[], durData=[], psData=[], gasData=[];
 
-const vitalsChart = new Chart(document.getElementById('vitals-chart'), {
+const occChart = new Chart(document.getElementById('occ-chart'), {
   type:'line', data:{ labels, datasets:[
-    { label:'HR',   data:hrData, borderColor:'#ff4466', backgroundColor:'transparent', borderWidth:1.5, pointRadius:0, tension:0.3 },
-    { label:'BR',   data:brData, borderColor:'#ffaa00', backgroundColor:'transparent', borderWidth:1.5, pointRadius:0, borderDash:[4,3], tension:0.3 },
+    { label:'Duration', data:durData, borderColor:'#00ff88', backgroundColor:'#00ff8811', borderWidth:1.5, pointRadius:2, fill:true, tension:0.3 },
   ]},
   options:{ responsive:true, maintainAspectRatio:false, animation:{duration:300}, plugins:{legend:{display:false}},
     scales:{ x:{display:false}, y:{ min:0, grid:{color:'#111820'}, ticks:{color:'#2a4a6a',font:{size:10,family:'Courier New'}}, border:{color:'#1a2a3a'} } }
@@ -212,10 +264,11 @@ const envChart = new Chart(document.getElementById('env-chart'), {
   }
 });
 
-function push(label, hr, br, ps, gas) {
-  labels.push(label); hrData.push(hr); brData.push(br); psData.push(ps); gasData.push(gas);
-  if (labels.length > MAX) { labels.shift(); hrData.shift(); brData.shift(); psData.shift(); gasData.shift(); }
-  vitalsChart.update(); envChart.update();
+function formatDuration(sec) {
+  if (!sec || sec <= 0) return '00:00';
+  const m = Math.floor(sec / 60);
+  const s = sec % 60;
+  return `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
 }
 
 function setLive(ok) {
@@ -236,17 +289,45 @@ async function fetchLatest() {
     if (d.message) return;
     setLive(true);
 
-    const motion = d.motion === true || d.motion === 'true';
-    const hr     = Math.round(d.heart_rate || 0);
-    const br     = Math.round(d.sound_level || 0);
-    const ps     = parseFloat((d.presence_score || 0).toFixed(1));
-    const gas    = Math.round(d.gas_level || 0);
-    const sound  = Math.round(d.sound_level || 0);
-    const rssi   = d.rssi || '--';
-    const threat = (d.analysis && d.analysis.threat_level) || 'low';
-    const alerts = (d.analysis && d.analysis.alerts) || [];
-    const ts     = d.timestamp ? d.timestamp.slice(11,19) : '';
+    const motion  = d.motion === true || d.motion === 'true';
+    const hr      = Math.round(d.heart_rate || 0);
+    const br      = Math.round(d.sound_level || 0);
+    const ps      = parseFloat((d.presence_score || 0).toFixed(1));
+    const gas     = Math.round(d.gas_level || 0);
+    const sound   = Math.round(d.sound_level || 0);
+    const rssi    = d.rssi || '--';
+    const threat  = (d.analysis && d.analysis.threat_level) || 'low';
+    const alerts  = (d.analysis && d.analysis.alerts) || [];
+    const ts      = d.timestamp ? d.timestamp.slice(11,19) : '';
+    const occ     = d.occupancy || {};
 
+    // ── Occupancy banner ──
+    const durSec    = occ.duration_seconds || 0;
+    const occupied  = occ.occupied || false;
+    const spikes    = occ.sound_spike_count || 0;
+    const sessions  = occ.sessions_today || 0;
+    const lastSec   = occ.last_session_sec || 0;
+
+    const isAlert   = occupied && durSec >= 300;
+    const isDanger  = occupied && durSec >= 600;
+    const bannerClass = isDanger ? 'danger' : isAlert ? 'alert' : occupied ? 'occupied' : '';
+    const labelClass  = isDanger ? 'danger' : isAlert ? 'alert' : occupied ? 'occupied' : '';
+
+    document.getElementById('occ-banner').className = 'occupancy-banner ' + bannerClass;
+    document.getElementById('occ-label').className  = 'occ-label ' + labelClass;
+    document.getElementById('occ-timer').className  = 'occ-timer-val ' + labelClass;
+    document.getElementById('occ-label').textContent = occupied ? 'OCCUPIED' : 'VACANT';
+    document.getElementById('occ-timer').textContent = formatDuration(durSec);
+    document.getElementById('occ-sessions').textContent = sessions;
+    document.getElementById('occ-spikes').textContent   = spikes;
+    document.getElementById('occ-last').textContent     = lastSec > 0 ? formatDuration(lastSec) : '--';
+
+    const pct = Math.min(100, (durSec / 600) * 100);
+    const barColor = isDanger ? '#ff4444' : isAlert ? '#ffaa00' : '#00ff88';
+    document.getElementById('occ-progress').style.width      = pct + '%';
+    document.getElementById('occ-progress').style.background = barColor;
+
+    // ── Sensor cards ──
     document.getElementById('motion-badge').textContent = motion ? 'DETECTED' : 'CLEAR';
     document.getElementById('motion-badge').className   = 'motion-badge' + (motion ? ' active' : '');
     document.getElementById('card-motion').className    = 'card' + (motion ? ' motion-on' : '');
@@ -258,11 +339,10 @@ async function fetchLatest() {
     document.getElementById('val-sound').textContent    = sound || '--';
 
     const gasEl = document.getElementById('val-gas');
-    const cardGas = document.getElementById('card-gas');
     gasEl.textContent = gas || '--';
-    if (gas >= 400)      { gasEl.className='card-value gas-danger-val'; cardGas.className='card gas-danger'; document.getElementById('gas-unit').textContent='DANGER'; }
-    else if (gas >= 250) { gasEl.className='card-value gas-warn';       cardGas.className='card gas';        document.getElementById('gas-unit').textContent='Poor air quality'; }
-    else                 { gasEl.className='card-value gas-ok';         cardGas.className='card gas';        document.getElementById('gas-unit').textContent='ppm index'; }
+    if (gas >= 400)      { gasEl.className='card-value gas-danger-val'; document.getElementById('card-gas').className='card gas-danger'; document.getElementById('gas-unit').textContent='DANGER'; }
+    else if (gas >= 250) { gasEl.className='card-value gas-warn';       document.getElementById('card-gas').className='card gas';        document.getElementById('gas-unit').textContent='Poor air quality'; }
+    else                 { gasEl.className='card-value gas-ok';         document.getElementById('card-gas').className='card gas';        document.getElementById('gas-unit').textContent='ppm index'; }
 
     const tb = document.getElementById('threat-badge');
     tb.textContent = threat.toUpperCase();
@@ -270,8 +350,12 @@ async function fetchLatest() {
     document.getElementById('card-threat').className = `card threat-${threat}`;
     document.getElementById('alert-text').textContent = alerts.length ? alerts[0] : 'No alerts';
 
-    push(ts, hr, br, ps, gas);
+    // Charts
+    labels.push(ts); durData.push(durSec); psData.push(ps); gasData.push(gas);
+    if (labels.length > MAX) { labels.shift(); durData.shift(); psData.shift(); gasData.shift(); }
+    occChart.update(); envChart.update();
 
+    // Node status
     try {
       const nr = await fetch(`${API}/nodes`);
       if (nr.ok) {
@@ -296,20 +380,23 @@ async function fetchLogs() {
     document.getElementById('log-count').textContent = `${logs.length} entries`;
     const recent = logs.slice(-15).reverse();
     document.getElementById('log-entries').innerHTML = recent.map(d => {
-      const motion = d.motion === true || d.motion === 'true';
-      const ts   = d.timestamp ? d.timestamp.slice(0,19).replace('T',' ') : '--';
-      const hr   = Math.round(d.heart_rate || 0);
-      const br   = Math.round(d.sound_level || 0);
-      const ps   = parseFloat((d.presence_score||0).toFixed(1));
-      const gas  = Math.round(d.gas_level || 0);
-      const threat = (d.analysis && d.analysis.threat_level) || '--';
+      const motion  = d.motion === true || d.motion === 'true';
+      const ts      = d.timestamp ? d.timestamp.slice(0,19).replace('T',' ') : '--';
+      const hr      = Math.round(d.heart_rate || 0);
+      const br      = Math.round(d.sound_level || 0);
+      const gas     = Math.round(d.gas_level || 0);
+      const occ     = d.occupancy || {};
+      const durSec  = occ.duration_seconds || 0;
+      const spikes  = occ.sound_spike_count || 0;
+      const threat  = (d.analysis && d.analysis.threat_level) || '--';
       return `<div class="log-row">
         <span class="log-ts">${ts}</span>
         <span class="${motion?'log-motion-y':'log-motion-n'}">${motion?'YES':'no'}</span>
         <span class="log-hr">${hr||'--'} bpm</span>
         <span class="log-br">${br||'--'}/min</span>
-        <span class="log-ps">${ps}</span>
         <span class="log-gas">${gas||'--'}</span>
+        <span class="log-ps">${spikes}</span>
+        <span class="log-dur">${formatDuration(durSec)}</span>
         <span>${threat}</span>
       </div>`;
     }).join('');

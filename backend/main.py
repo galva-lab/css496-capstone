@@ -17,34 +17,131 @@ fake_database = []
 
 # Latest reading per source
 latest_by_source = {
-    "wifi_csi":    None,   # ESP32 #1 + #2 via ruview_bridge
-    "esp32_node3": None,   # ESP32 #3 gas + sound
+    "wifi_csi":    None,
+    "esp32_node3": None,
 }
 
-def save_to_csv(data):
-    file_exists = os.path.isfile("../data/sensor_logs.csv")
-    with open("../data/sensor_logs.csv", mode="a", newline="") as file:
-        writer = csv.writer(file)
+# ── Occupancy Tracking ─────────────────────────────────────────
+occupancy = {
+    "occupied":          False,      # is someone currently in the room?
+    "entry_time":        None,       # datetime when motion first detected
+    "duration_seconds":  0,          # how long they've been there
+    "exit_time":         None,       # datetime when they left
+    "last_session_sec":  0,          # duration of the last completed session
+    "sound_spike_count": 0,          # number of sound spikes during this session
+    "sessions_today":    0,          # total sessions logged today
+}
+
+# Thresholds
+OCCUPANCY_ALERT_SECONDS = 300       # 5 minutes = abnormal stay
+SOUND_SPIKE_THRESHOLD   = 70        # dB level that counts as a spike
+EXIT_TIMEOUT_SECONDS    = 10        # seconds of no motion before marking exit
+last_motion_time        = None      # track when we last saw motion
+
+def update_occupancy(motion: bool, sound_level: int):
+    """Update occupancy state based on latest motion and sound readings."""
+    global last_motion_time
+
+    now = datetime.now()
+
+    if motion:
+        last_motion_time = now
+
+        if not occupancy["occupied"]:
+            # Someone just entered
+            occupancy["occupied"]          = True
+            occupancy["entry_time"]        = now
+            occupancy["duration_seconds"]  = 0
+            occupancy["sound_spike_count"] = 0
+            occupancy["exit_time"]         = None
+            print(f"[occupancy] ENTRY detected at {now.strftime('%H:%M:%S')}")
+
+        else:
+            # Already occupied — update duration
+            if occupancy["entry_time"]:
+                occupancy["duration_seconds"] = int(
+                    (now - occupancy["entry_time"]).total_seconds()
+                )
+
+        # Count sound spikes during session
+        if sound_level >= SOUND_SPIKE_THRESHOLD:
+            occupancy["sound_spike_count"] += 1
+            print(f"[occupancy] Sound spike #{occupancy['sound_spike_count']} detected ({sound_level} dB)")
+
+    else:
+        # No motion detected
+        if occupancy["occupied"] and last_motion_time:
+            seconds_since_motion = (now - last_motion_time).total_seconds()
+
+            if seconds_since_motion >= EXIT_TIMEOUT_SECONDS:
+                # Mark as exited
+                duration = occupancy["duration_seconds"]
+                occupancy["occupied"]         = False
+                occupancy["exit_time"]        = now
+                occupancy["last_session_sec"] = duration
+                occupancy["sessions_today"]  += 1
+                print(f"[occupancy] EXIT detected. Duration: {duration}s, Spikes: {occupancy['sound_spike_count']}")
+
+                # Log session to CSV
+                log_occupancy_session(duration, occupancy["sound_spike_count"])
+
+def log_occupancy_session(duration_sec: int, sound_spikes: int):
+    """Log a completed occupancy session to CSV."""
+    os.makedirs("../data", exist_ok=True)
+    file_exists = os.path.isfile("../data/occupancy_log.csv")
+    with open("../data/occupancy_log.csv", mode="a", newline="") as f:
+        writer = csv.writer(f)
         if not file_exists:
             writer.writerow([
-                "timestamp", "source",
-                "motion", "sound_level", "gas_level",
-                "presence_score", "heart_rate", "rssi",
-                "threat_level", "alerts"
+                "exit_time", "duration_seconds", "duration_minutes",
+                "sound_spikes", "abnormal"
             ])
+        abnormal = duration_sec >= OCCUPANCY_ALERT_SECONDS or sound_spikes >= 3
         writer.writerow([
-            data.get("timestamp"),
-            data.get("source", "unknown"),
-            data.get("motion"),
-            data.get("sound_level"),
-            data.get("gas_level"),
-            data.get("presence_score"),
-            data.get("heart_rate"),
-            data.get("rssi"),
-            data.get("analysis", {}).get("threat_level"),
-            "; ".join(data.get("analysis", {}).get("alerts", []))
+            datetime.now().isoformat(),
+            duration_sec,
+            round(duration_sec / 60, 2),
+            sound_spikes,
+            abnormal
         ])
 
+def get_occupancy_alerts(duration_sec: int, sound_spikes: int, gas: int, motion: bool):
+    """Generate occupancy-aware alerts."""
+    alerts = []
+    threat = "low"
+
+    if motion and duration_sec >= OCCUPANCY_ALERT_SECONDS:
+        alerts.append(f"Prolonged occupancy: {duration_sec // 60}m {duration_sec % 60}s")
+        threat = "medium"
+
+    if motion and duration_sec >= OCCUPANCY_ALERT_SECONDS * 2:
+        alerts.append("Extended stay — possible incident")
+        threat = "high"
+
+    if sound_spikes >= 3 and motion:
+        alerts.append(f"Repeated sound spikes detected ({sound_spikes}x)")
+        threat = "high" if threat != "high" else threat
+
+    if motion and duration_sec >= OCCUPANCY_ALERT_SECONDS and sound_spikes >= 2:
+        alerts.append("Prolonged stay + sound anomaly — investigate")
+        threat = "high"
+
+    if gas >= 400:
+        alerts.append("Dangerous gas level detected")
+        threat = "high"
+    elif gas >= 250:
+        alerts.append("Poor air quality detected")
+        if threat == "low":
+            threat = "medium"
+
+    if motion and gas >= 300 and duration_sec >= 60:
+        alerts.append("Motion + gas anomaly during occupancy")
+        if threat != "high":
+            threat = "high"
+
+    return {"threat_level": threat, "alerts": alerts}
+
+# ── Sensor fusion ──────────────────────────────────────────────
 def fuse_latest():
     csi   = latest_by_source.get("wifi_csi") or {}
     node3 = latest_by_source.get("esp32_node3") or {}
@@ -59,44 +156,34 @@ def fuse_latest():
         "source": "fused",
     }
 
-def analyze_data(data):
-    alerts = []
-    motion = data.get("motion", False)
-    sound  = data.get("sound_level", 0)
-    gas    = data.get("gas_level", 0)
-    pres   = data.get("presence_score", 0)
-    threat_level = "low"
+def save_to_csv(data):
+    os.makedirs("../data", exist_ok=True)
+    file_exists = os.path.isfile("../data/sensor_logs.csv")
+    with open("../data/sensor_logs.csv", mode="a", newline="") as f:
+        writer = csv.writer(f)
+        if not file_exists:
+            writer.writerow([
+                "timestamp", "source", "motion", "sound_level", "gas_level",
+                "presence_score", "heart_rate", "rssi",
+                "occupancy_duration_sec", "sound_spikes",
+                "threat_level", "alerts"
+            ])
+        writer.writerow([
+            data.get("timestamp"),
+            data.get("source", "unknown"),
+            data.get("motion"),
+            data.get("sound_level"),
+            data.get("gas_level"),
+            data.get("presence_score"),
+            data.get("heart_rate"),
+            data.get("rssi"),
+            data.get("occupancy", {}).get("duration_seconds", 0),
+            data.get("occupancy", {}).get("sound_spike_count", 0),
+            data.get("analysis", {}).get("threat_level"),
+            "; ".join(data.get("analysis", {}).get("alerts", []))
+        ])
 
-    if motion and sound >= 80:
-        alerts.append("Possible aggressive activity")
-        threat_level = "medium"
-
-    if motion and sound >= 100:
-        alerts.append("Possible emergency — loud noise detected")
-        threat_level = "high"
-
-    if gas >= 250:
-        alerts.append("Poor air quality detected")
-        if threat_level == "low":
-            threat_level = "medium"
-
-    if gas >= 400:
-        alerts.append("Dangerous gas level detected")
-        threat_level = "high"
-
-    if motion and gas >= 300:
-        alerts.append("Motion + gas anomaly — possible incident")
-        threat_level = "high"
-
-    return {
-        "motion_detected": motion,
-        "sound_level":     sound,
-        "gas_level":       gas,
-        "presence_score":  pres,
-        "threat_level":    threat_level,
-        "alerts":          alerts
-    }
-
+# ── Endpoints ──────────────────────────────────────────────────
 @app.get("/")
 def home():
     return {"status": "backend running"}
@@ -110,13 +197,38 @@ def receive_sensor_data(data: dict):
 
     fused = fuse_latest()
     fused["timestamp"] = data["timestamp"]
-    analysis = analyze_data(fused)
+
+    motion      = fused.get("motion", False)
+    sound_level = fused.get("sound_level", 0) or 0
+    gas_level   = fused.get("gas_level", 0) or 0
+
+    # Update occupancy tracker
+    update_occupancy(motion, sound_level)
+
+    # Attach occupancy snapshot to reading
+    fused["occupancy"] = {
+        "occupied":          occupancy["occupied"],
+        "duration_seconds":  occupancy["duration_seconds"],
+        "sound_spike_count": occupancy["sound_spike_count"],
+        "sessions_today":    occupancy["sessions_today"],
+        "last_session_sec":  occupancy["last_session_sec"],
+        "entry_time":        occupancy["entry_time"].isoformat() if occupancy["entry_time"] else None,
+    }
+
+    # Generate occupancy-aware alerts
+    analysis = get_occupancy_alerts(
+        occupancy["duration_seconds"],
+        occupancy["sound_spike_count"],
+        gas_level,
+        motion
+    )
     fused["analysis"] = analysis
 
     fake_database.append(fused)
     save_to_csv(fused)
 
-    print(f"[{source}] gas={fused.get('gas_level')} sound={fused.get('sound_level')} motion={fused.get('motion')} threat={analysis['threat_level']}")
+    duration = occupancy["duration_seconds"]
+    print(f"[{source}] motion={motion} duration={duration}s spikes={occupancy['sound_spike_count']} threat={analysis['threat_level']}")
 
     return {
         "status": "received",
@@ -133,6 +245,20 @@ def get_latest():
     if not fake_database:
         return {"message": "No data yet"}
     return fake_database[-1]
+
+@app.get("/occupancy")
+def get_occupancy():
+    """Current occupancy state."""
+    return {
+        "occupied":          occupancy["occupied"],
+        "duration_seconds":  occupancy["duration_seconds"],
+        "duration_minutes":  round(occupancy["duration_seconds"] / 60, 1),
+        "sound_spike_count": occupancy["sound_spike_count"],
+        "sessions_today":    occupancy["sessions_today"],
+        "last_session_sec":  occupancy["last_session_sec"],
+        "entry_time":        occupancy["entry_time"].isoformat() if occupancy["entry_time"] else None,
+        "alert_threshold_sec": OCCUPANCY_ALERT_SECONDS,
+    }
 
 @app.get("/nodes")
 def get_nodes():
