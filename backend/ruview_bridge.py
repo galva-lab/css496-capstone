@@ -24,7 +24,7 @@ import threading
 BACKEND_URL     = "http://127.0.0.1:8000/sensor-data"
 RUVIEW_PORT     = 5005          # UDP port ESP32 sends to
 UPDATE_INTERVAL = 2             # seconds between FastAPI POSTs
-PRESENCE_THRESH = 1.0           # presence score above this = motion detected
+PRESENCE_THRESH = 1.5           # presence score above this = motion detected
 # ────────────────────────────────────────────────────────────────────────────
 
 # Shared state updated by the reader thread

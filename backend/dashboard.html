@@ -109,8 +109,8 @@
   .log-box { background: #0d1520; border: 1px solid #1a2a3a; border-radius: 8px; padding: 16px; }
   .log-title { font-size: 10px; letter-spacing: 0.15em; color: #456; text-transform: uppercase; margin-bottom: 12px; display: flex; justify-content: space-between; }
   .log-entries { font-size: 11px; line-height: 1.8; color: #456; max-height: 180px; overflow-y: auto; }
-  .log-row    { display: grid; grid-template-columns: 150px 65px 70px 75px 65px 65px 70px auto; gap: 6px; padding: 3px 0; border-bottom: 1px solid #111820; }
-  .log-header { display: grid; grid-template-columns: 150px 65px 70px 75px 65px 65px 70px auto; gap: 6px; padding: 0 0 6px 0; border-bottom: 1px solid #1a2a3a; margin-bottom: 4px; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #2a4a6a; }
+  .log-row    { display: grid; grid-template-columns: 150px 65px 65px 65px 65px; gap: 6px; padding: 3px 0; border-bottom: 1px solid #111820; }
+  .log-header { display: grid; grid-template-columns: 150px 65px 65px 65px 65px; gap: 6px; padding: 0 0 6px 0; border-bottom: 1px solid #1a2a3a; margin-bottom: 4px; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #2a4a6a; }
   .log-row:last-child { border-bottom: none; }
   .log-ts { color: #2a4a6a; }
   .log-motion-y { color: #00ff88; } .log-motion-n { color: #2a4a2a; }
@@ -130,6 +130,7 @@
       <div class="nbadge" id="n1"><span class="dot"></span>ESP32 #1</div>
       <div class="nbadge" id="n2"><span class="dot"></span>ESP32 #2</div>
       <div class="nbadge" id="n3"><span class="dot"></span>ESP32 #3</div>
+      <div class="nbadge" id="n4"><span class="dot"></span>ESP32 #4</div>
     </div>
     <div class="status-bar">
       <div class="dot" id="live-dot"></div>
@@ -140,24 +141,12 @@
 
 <div id="error-msg">Cannot reach FastAPI at <strong>http://127.0.0.1:8000</strong>. Make sure it is running.</div>
 
-<!-- Occupancy Banner -->
+<!-- Occupancy Banner (renamed: Restroom Status) -->
 <div class="occupancy-banner" id="occ-banner">
   <div class="occ-left">
     <div>
       <div class="occ-status">Restroom Status</div>
-      <div class="occ-label" id="occ-label">VACANT</div>
-    </div>
-    <div class="occ-timer">
-      <div class="occ-timer-val" id="occ-timer">00:00</div>
-      <div class="occ-timer-label">Time in room</div>
-    </div>
-  </div>
-  <div class="occ-right">
-    <div class="occ-stat">Sessions today: <span id="occ-sessions">0</span></div>
-    <div class="occ-stat">Sound spikes: <span id="occ-spikes">0</span></div>
-    <div class="occ-stat">Last session: <span id="occ-last">--</span></div>
-    <div class="occ-progress-wrap">
-      <div class="occ-progress-fill" id="occ-progress" style="width:0%"></div>
+      <div class="occ-label" id="occ-label">NO SIGNAL</div>
     </div>
   </div>
 </div>
@@ -175,18 +164,6 @@
     <div class="card-value" id="val-presence">--</div>
     <div class="card-unit">Wi-Fi signal disturbance</div>
   </div>
-  <div class="card heartrate">
-    <div class="node-tag">CSI #1+#2</div>
-    <div class="card-label">Heart Rate</div>
-    <div class="card-value" id="val-hr">--</div>
-    <div class="card-unit">BPM (estimated)</div>
-  </div>
-  <div class="card breathing">
-    <div class="node-tag">CSI #1+#2</div>
-    <div class="card-label">Breathing Rate</div>
-    <div class="card-value" id="val-br">--</div>
-    <div class="card-unit">breaths / min</div>
-  </div>
   <div class="card gas" id="card-gas">
     <div class="node-tag">MQ-135 #3</div>
     <div class="card-label">Air Quality</div>
@@ -199,24 +176,9 @@
     <div class="card-value" id="val-sound" style="color:#aa88ff;">--</div>
     <div class="card-unit">dB</div>
   </div>
-  <div class="card" id="card-threat">
-    <div class="card-label">Threat Level</div>
-    <div class="card-value"><span class="threat-badge threat-low" id="threat-badge">--</span></div>
-    <div class="card-unit" id="alert-text">&nbsp;</div>
-  </div>
-  <div class="card">
-    <div class="node-tag">CSI #1+#2</div>
-    <div class="card-label">Signal Strength</div>
-    <div class="card-value" id="val-rssi">--</div>
-    <div class="card-unit">dBm RSSI</div>
-  </div>
 </div>
 
 <div class="charts">
-  <div class="chart-box">
-    <div class="chart-title">Occupancy duration — current &amp; history (seconds)</div>
-    <div class="chart-wrap"><canvas id="occ-chart" role="img" aria-label="Occupancy duration over time">Occupancy duration trend.</canvas></div>
-  </div>
   <div class="chart-box">
     <div class="chart-title">Gas level &amp; presence score — last 30 readings</div>
     <div class="chart-wrap"><canvas id="env-chart" role="img" aria-label="Gas and presence over time">Gas and presence trend.</canvas></div>
@@ -229,7 +191,7 @@
     <span id="log-count">0 entries</span>
   </div>
   <div class="log-header">
-    <span>Timestamp</span><span>Motion</span><span>HR</span><span>Breathing</span><span>Gas</span><span>Spikes</span><span>Duration</span><span>Threat</span>
+    <span>Timestamp</span><span>Motion</span><span>Presence</span><span>Gas</span><span>Sound</span>
   </div>
   <div class="log-entries" id="log-entries">
     <div style="color:#2a4a6a; padding: 8px 0;">Waiting for data...</div>
@@ -239,16 +201,7 @@
 <script>
 const API = 'http://127.0.0.1:8000';
 const MAX = 30;
-const labels=[], durData=[], psData=[], gasData=[];
-
-const occChart = new Chart(document.getElementById('occ-chart'), {
-  type:'line', data:{ labels, datasets:[
-    { label:'Duration', data:durData, borderColor:'#00ff88', backgroundColor:'#00ff8811', borderWidth:1.5, pointRadius:2, fill:true, tension:0.3 },
-  ]},
-  options:{ responsive:true, maintainAspectRatio:false, animation:{duration:300}, plugins:{legend:{display:false}},
-    scales:{ x:{display:false}, y:{ min:0, grid:{color:'#111820'}, ticks:{color:'#2a4a6a',font:{size:10,family:'Courier New'}}, border:{color:'#1a2a3a'} } }
-  }
-});
+const labels=[], psData=[], gasData=[];
 
 const envChart = new Chart(document.getElementById('env-chart'), {
   type:'line', data:{ labels, datasets:[
@@ -264,12 +217,7 @@ const envChart = new Chart(document.getElementById('env-chart'), {
   }
 });
 
-function formatDuration(sec) {
-  if (!sec || sec <= 0) return '00:00';
-  const m = Math.floor(sec / 60);
-  const s = sec % 60;
-  return `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
-}
+// duration formatting removed — timer/duration displays are intentionally disabled
 
 function setLive(ok) {
   document.getElementById('live-dot').className = 'dot ' + (ok ? 'live' : 'error');
@@ -290,42 +238,21 @@ async function fetchLatest() {
     setLive(true);
 
     const motion  = d.motion === true || d.motion === 'true';
-    const hr      = Math.round(d.heart_rate || 0);
-    const br      = Math.round(d.sound_level || 0);
     const ps      = parseFloat((d.presence_score || 0).toFixed(1));
     const gas     = Math.round(d.gas_level || 0);
     const sound   = Math.round(d.sound_level || 0);
-    const rssi    = d.rssi || '--';
-    const threat  = (d.analysis && d.analysis.threat_level) || 'low';
-    const alerts  = (d.analysis && d.analysis.alerts) || [];
     const ts      = d.timestamp ? d.timestamp.slice(11,19) : '';
     const occ     = d.occupancy || {};
-
-    // ── Occupancy banner ──
-    const durSec    = occ.duration_seconds || 0;
-    const occupied  = occ.occupied || false;
-    const spikes    = occ.sound_spike_count || 0;
-    const sessions  = occ.sessions_today || 0;
-    const lastSec   = occ.last_session_sec || 0;
-
-    const isAlert   = occupied && durSec >= 300;
-    const isDanger  = occupied && durSec >= 600;
-    const bannerClass = isDanger ? 'danger' : isAlert ? 'alert' : occupied ? 'occupied' : '';
-    const labelClass  = isDanger ? 'danger' : isAlert ? 'alert' : occupied ? 'occupied' : '';
+    const presenceDetected = occ.presence_detected || false;
+    const threat = d.analysis && d.analysis.threat_level ? d.analysis.threat_level : 'low';
+    const isAlert = threat === 'medium';
+    const isDanger = threat === 'high';
+    const bannerClass = isDanger ? 'danger' : isAlert ? 'alert' : presenceDetected ? 'occupied' : '';
+    const labelClass  = isDanger ? 'danger' : isAlert ? 'alert' : presenceDetected ? 'occupied' : '';
 
     document.getElementById('occ-banner').className = 'occupancy-banner ' + bannerClass;
     document.getElementById('occ-label').className  = 'occ-label ' + labelClass;
-    document.getElementById('occ-timer').className  = 'occ-timer-val ' + labelClass;
-    document.getElementById('occ-label').textContent = occupied ? 'OCCUPIED' : 'VACANT';
-    document.getElementById('occ-timer').textContent = formatDuration(durSec);
-    document.getElementById('occ-sessions').textContent = sessions;
-    document.getElementById('occ-spikes').textContent   = spikes;
-    document.getElementById('occ-last').textContent     = lastSec > 0 ? formatDuration(lastSec) : '--';
-
-    const pct = Math.min(100, (durSec / 600) * 100);
-    const barColor = isDanger ? '#ff4444' : isAlert ? '#ffaa00' : '#00ff88';
-    document.getElementById('occ-progress').style.width      = pct + '%';
-    document.getElementById('occ-progress').style.background = barColor;
+    document.getElementById('occ-label').textContent = presenceDetected ? 'PRESENCE DETECTED' : 'NO SIGNAL';
 
     // ── Sensor cards ──
     document.getElementById('motion-badge').textContent = motion ? 'DETECTED' : 'CLEAR';
@@ -333,9 +260,6 @@ async function fetchLatest() {
     document.getElementById('card-motion').className    = 'card' + (motion ? ' motion-on' : '');
     document.getElementById('motion-sub').textContent   = motion ? 'Wi-Fi disturbance detected' : 'No motion';
     document.getElementById('val-presence').textContent = ps;
-    document.getElementById('val-hr').textContent       = hr || '--';
-    document.getElementById('val-br').textContent       = br || '--';
-    document.getElementById('val-rssi').textContent     = rssi;
     document.getElementById('val-sound').textContent    = sound || '--';
 
     const gasEl = document.getElementById('val-gas');
@@ -344,16 +268,10 @@ async function fetchLatest() {
     else if (gas >= 250) { gasEl.className='card-value gas-warn';       document.getElementById('card-gas').className='card gas';        document.getElementById('gas-unit').textContent='Poor air quality'; }
     else                 { gasEl.className='card-value gas-ok';         document.getElementById('card-gas').className='card gas';        document.getElementById('gas-unit').textContent='ppm index'; }
 
-    const tb = document.getElementById('threat-badge');
-    tb.textContent = threat.toUpperCase();
-    tb.className   = `threat-badge threat-${threat}`;
-    document.getElementById('card-threat').className = `card threat-${threat}`;
-    document.getElementById('alert-text').textContent = alerts.length ? alerts[0] : 'No alerts';
-
-    // Charts
-    labels.push(ts); durData.push(durSec); psData.push(ps); gasData.push(gas);
-    if (labels.length > MAX) { labels.shift(); durData.shift(); psData.shift(); gasData.shift(); }
-    occChart.update(); envChart.update();
+    // Charts (gas + presence only)
+    labels.push(ts); psData.push(ps); gasData.push(gas);
+    if (labels.length > MAX) { labels.shift(); psData.shift(); gasData.shift(); }
+    envChart.update();
 
     // Node status
     try {
@@ -362,13 +280,14 @@ async function fetchLatest() {
         const nodes = await nr.json();
         const csi = nodes.wifi_csi && nodes.wifi_csi.connected;
         const n3  = nodes.esp32_node3 && nodes.esp32_node3.connected;
-        setNode('n1', csi); setNode('n2', csi); setNode('n3', n3);
+        const n4  = nodes.esp32_node4 && nodes.esp32_node4.connected;
+        setNode('n1', csi); setNode('n2', csi); setNode('n3', n3); setNode('n4', n4);
       }
-    } catch(e) { setNode('n1', true); setNode('n2', false); setNode('n3', false); }
+    } catch(e) { setNode('n1', true); setNode('n2', false); setNode('n3', false); setNode('n4', false); }
 
   } catch(e) {
     setLive(false);
-    setNode('n1',false); setNode('n2',false); setNode('n3',false);
+    setNode('n1',false); setNode('n2',false); setNode('n3',false); setNode('n4',false);
   }
 }
 
@@ -382,22 +301,15 @@ async function fetchLogs() {
     document.getElementById('log-entries').innerHTML = recent.map(d => {
       const motion  = d.motion === true || d.motion === 'true';
       const ts      = d.timestamp ? d.timestamp.slice(0,19).replace('T',' ') : '--';
-      const hr      = Math.round(d.heart_rate || 0);
-      const br      = Math.round(d.sound_level || 0);
+      const ps      = parseFloat((d.presence_score || 0).toFixed(1));
       const gas     = Math.round(d.gas_level || 0);
-      const occ     = d.occupancy || {};
-      const durSec  = occ.duration_seconds || 0;
-      const spikes  = occ.sound_spike_count || 0;
-      const threat  = (d.analysis && d.analysis.threat_level) || '--';
+      const sound   = Math.round(d.sound_level || 0);
       return `<div class="log-row">
         <span class="log-ts">${ts}</span>
         <span class="${motion?'log-motion-y':'log-motion-n'}">${motion?'YES':'no'}</span>
-        <span class="log-hr">${hr||'--'} bpm</span>
-        <span class="log-br">${br||'--'}/min</span>
+        <span class="log-ps">${ps||'--'}</span>
         <span class="log-gas">${gas||'--'}</span>
-        <span class="log-ps">${spikes}</span>
-        <span class="log-dur">${formatDuration(durSec)}</span>
-        <span>${threat}</span>
+        <span class="log-gas">${sound||'--'}</span>
       </div>`;
     }).join('');
   } catch(e) {}
