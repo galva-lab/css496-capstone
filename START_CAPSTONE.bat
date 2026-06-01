@@ -10,8 +10,11 @@ echo ============================================
 echo.
 
 REM ── Config ──────────────────────────────────
-set CAPSTONE=C:\Users\Branm\OneDrive\Documents\School\Spring 26\CSS 496\Capstone
-set RUVIEW=C:\Users\Branm\OneDrive\Documents\School\Spring 26\CSS 496\Ruview\RuView
+REM %~dp0 = folder this script lives in (the Capstone root), so paths work
+REM regardless of username or where the project is moved. Trailing backslash
+REM is included in %~dp0, so do not add another before subfolders.
+set CAPSTONE=%~dp0
+set RUVIEW=%~dp0..\Ruview\RuView
 REM ─────────────────────────────────────────────
 
 REM Check Python is available

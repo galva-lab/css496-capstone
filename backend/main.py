@@ -14,6 +14,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Recent readings kept in memory for /logs and /latest. Capped so a long-running
+# server doesn't grow unbounded — full history still lives in SQLite (sensor_logs.db).
+MAX_RECORDS = 500
 fake_database = []
 
 # Latest reading per source
@@ -166,6 +169,8 @@ def receive_sensor_data(data: dict):
     fused["analysis"] = analysis
 
     fake_database.append(fused)
+    if len(fake_database) > MAX_RECORDS:
+        del fake_database[:-MAX_RECORDS]  # keep only the most recent MAX_RECORDS
     save_to_db(fused)
 
     print(f"[{source}] motion={motion} presence={occupancy.get('presence_detected')} ps={fused.get('presence_score')} sound={sound_level} gas={gas_level} threat={analysis['threat_level']}")

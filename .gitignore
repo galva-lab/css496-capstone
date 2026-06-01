@@ -2,3 +2,6 @@ __pycache__/
 venv/
 *.pyc
 .env
+
+# Arduino Wi-Fi credentials (keep the .example template, not the real file)
+arduino_secrets.h

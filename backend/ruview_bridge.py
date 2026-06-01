@@ -90,9 +90,14 @@ def post_to_backend():
 
     payload = {
         "motion":      frame["motion"],
-        "sound_level": frame["breathing_rate"],  # breathing rate as sound proxy
-        "gas_level":   0,                         # gas sensor (ESP32 #3) not yet integrated
-        # Extra Wi-Fi sensing fields (your backend stores them if present)
+        # This CSI node has no microphone or gas sensor. Those readings come from
+        # the environmental sensor node (source "esp32_node3"), and the backend's
+        # fuse_latest() prefers that node's values. Send 0 here so we never
+        # overwrite a real sensor reading with a CSI stand-in.
+        "sound_level": 0,
+        "gas_level":   0,
+        # Wi-Fi CSI sensing fields
+        "breathing_rate": frame["breathing_rate"],
         "presence_score": frame["presence_score"],
         "heart_rate":     frame["heart_rate"],
         "n_persons":      frame["n_persons"],
