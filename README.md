@@ -1,4 +1,4 @@
-# Privacy-Preserving Multi-Sensor IoT System for Abnormal Restroom Activity Detection
+gi# Privacy-Preserving Multi-Sensor IoT System for Abnormal Restroom Activity Detection
 
 A real-time restroom safety monitoring system using four ESP32-S3 devices, Wi-Fi CSI sensing, environmental sensors, and a live web dashboard — all without cameras or personal data collection.
 
@@ -36,6 +36,15 @@ ESP32-S3 Node #4  ──┘  Gas + Sound sensors    │
                                                ├─ SQLite data logging
                                                └─ Real-time web dashboard
 ```
+
+## Prerequisites
+
+This project requires the **RuView** framework to bridge Wi-Fi CSI data from the ESP32-S3 nodes to the backend.
+
+> Clone and set up RuView from the official repository before running the system:
+> **[RuView GitHub — add link here]**
+
+RuView runs on the ESP32-S3 nodes and forwards parsed CSI data over Wi-Fi to the FastAPI backend bridge endpoint.
 
 ## Quick Start
 
