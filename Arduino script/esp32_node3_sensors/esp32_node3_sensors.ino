@@ -4,7 +4,7 @@
 
 const char* ssid = SECRET_WIFI_SSID;
 const char* password = SECRET_WIFI_PASS;
-const char* serverIP = "10.0.0.145";
+const char* serverIP = "10.229.208.187";
 const int serverPort = 8000;
 
 const int GAS_PIN = 4;
@@ -81,7 +81,7 @@ void loop() {
       http.addHeader("Content-Type", "application/json");
 
       String body = "{";
-      body += "\"source\":\"esp32_node3\",";
+      body += "\"source\":\"esp32_node4\",";
       body += "\"gas_level\":" + String(gasLevel) + ",";
       body += "\"sound_level\":" + String(soundLevel) + ",";
       body += "\"motion\":false";

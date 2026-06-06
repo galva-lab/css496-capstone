@@ -1,0 +1,14 @@
+timestamp,estimated_count,occupancy_level,raw_estimate,smoothed,motion,presence_score,sound_spike,gas_level
+2026-06-05T18:38:50.488788,0,Empty,0,0.0,False,0,False,453
+2026-06-05T18:38:52.637021,2,Busy,4,1.6,True,13.27,False,451
+2026-06-05T18:38:56.698584,4,Crowded,4,3.69,True,4.74,False,446
+2026-06-05T20:14:57.031659,0,Empty,0,0.0,False,0,False,391
+2026-06-05T20:15:10.114318,0,Empty,0,0.0,False,0,False,379
+2026-06-05T20:15:24.443054,2,Busy,4,1.6,False,0.0,False,368
+2026-06-05T20:15:30.522473,4,Crowded,4,3.69,True,9.75,False,367
+2026-06-05T20:31:33.287479,0,Empty,0,0.0,False,0,False,258
+2026-06-05T20:31:34.172641,2,Busy,4,1.6,True,19.74,False,258
+2026-06-05T20:31:38.244020,4,Crowded,4,3.69,True,23.17,False,256
+2026-06-05T20:31:48.498203,0,Empty,0,0.0,False,0,False,254
+2026-06-05T20:31:48.498203,2,Busy,4,1.6,True,9.54,False,254
+2026-06-05T20:31:52.617804,4,Crowded,4,3.69,True,20.98,False,254

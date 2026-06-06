@@ -24,7 +24,13 @@ import threading
 BACKEND_URL     = "http://127.0.0.1:8000/sensor-data"
 RUVIEW_PORT     = 5005          # UDP port ESP32 sends to
 UPDATE_INTERVAL = 2             # seconds between FastAPI POSTs
-PRESENCE_THRESH = 1.5           # presence score above this = motion detected
+# Per-board presence score that counts as "active". Your empty room reads noisy
+# and high (3-15), so this MUST be tuned to your environment — raise it until an
+# empty room stops triggering. Use scripts/calibration_logger.py to find it.
+PRESENCE_THRESH = 3.0
+# Consensus: how many boards must agree before we declare motion. With multiple
+# boards this outvotes single-board noise (the key to "more nodes = reliable").
+MOTION_MIN_NODES = 2
 # ────────────────────────────────────────────────────────────────────────────
 
 # Shared state updated by the reader thread
@@ -35,12 +41,18 @@ latest_frame = {
     "heart_rate": 0,
     "n_persons": 0,
     "rssi": 0,
+    "csi_nodes": 0,          # how many CSI boards reported in the latest frame
 }
 frame_lock = threading.Lock()
+
+# Only True once rf-scan.js delivers at least one real CSI frame.
+# Guards against posting stale defaults when no ESP32 is connected.
+has_csi_data = False
 
 
 def read_ruview(proc):
     """Reads JSON lines from rf-scan.js --json output and updates latest_frame."""
+    global has_csi_data
     print("[bridge] RuView reader thread started...")
     for raw_line in proc.stdout:
         line = raw_line.strip()
@@ -52,20 +64,44 @@ def read_ruview(proc):
             if not nodes:
                 continue
 
-            # Use the first node's data
-            node = nodes[0]
-            vitals = node.get("vitals") or {}
-            classification = node.get("classification") or {}
+            # Aggregate across all CSI boards using CONSENSUS so one noisy board
+            # can't cause false detections. (Plain MAX/OR amplifies noise — that
+            # is exactly why presence looked random and occupancy stuck high.)
+            #   motion    -> only when >= MOTION_MIN_NODES boards agree
+            #   presence  -> drop the single highest (noisiest) board when >=3
+            #   n_persons -> median, robust to one outlier board
+            #   vitals    -> from the board seeing the strongest presence
+            per_presence, per_persons = [], []
+            motion_votes  = 0
+            best_presence = -1.0
+            breathing_rate = heart_rate = rssi = 0
 
-            presence_score  = vitals.get("presenceScore", 0.0) or 0.0
-            breathing_rate  = vitals.get("breathingRate", 0) or 0
-            heart_rate      = vitals.get("heartrate", 0) or 0
-            n_persons       = vitals.get("nPersons", 0) or 0
-            motion_detected = (vitals.get("motionEnergy", 0) or 0) > 0
-            rssi            = node.get("rssi", 0) or 0
+            for nd in nodes:
+                v   = nd.get("vitals") or {}
+                ps  = v.get("presenceScore", 0.0) or 0.0
+                npp = v.get("nPersons", 0) or 0
+                me  = v.get("motionEnergy", 0) or 0
 
-            # Motion = presence score above threshold OR motion flag
-            motion = motion_detected or (presence_score >= PRESENCE_THRESH)
+                per_presence.append(ps)
+                per_persons.append(npp)
+                if me > 0 or ps >= PRESENCE_THRESH:
+                    motion_votes += 1
+                if ps > best_presence:
+                    best_presence  = ps
+                    breathing_rate = v.get("breathingRate", 0) or 0
+                    heart_rate     = v.get("heartrate", 0) or 0
+                    rssi           = nd.get("rssi", 0) or 0
+
+            n = len(nodes)
+            motion = motion_votes >= min(MOTION_MIN_NODES, n)
+
+            # Trimmed presence: ignore the single noisiest board when we have >=3.
+            per_presence.sort(reverse=True)
+            presence_score = per_presence[1] if n >= 3 else per_presence[0]
+
+            # Median people-count: a lone board hallucinating a crowd is outvoted.
+            per_persons.sort()
+            n_persons = per_persons[n // 2]
 
             with frame_lock:
                 latest_frame.update({
@@ -75,7 +111,9 @@ def read_ruview(proc):
                     "heart_rate":      round(heart_rate),
                     "n_persons":       n_persons,
                     "rssi":            rssi,
+                    "csi_nodes":       n,
                 })
+            has_csi_data = True
 
         except json.JSONDecodeError:
             pass  # skip non-JSON lines (startup messages)
@@ -85,13 +123,17 @@ def read_ruview(proc):
 
 def post_to_backend():
     """Reads latest frame and POSTs to FastAPI backend."""
+    if not has_csi_data:
+        print("[bridge] No CSI data yet — skipping POST (no ESP32 connected)")
+        return
+
     with frame_lock:
         frame = dict(latest_frame)
 
     payload = {
         "motion":      frame["motion"],
         # This CSI node has no microphone or gas sensor. Those readings come from
-        # the environmental sensor node (source "esp32_node3"), and the backend's
+        # the environmental sensor node (source "esp32_node4"), and the backend's
         # fuse_latest() prefers that node's values. Send 0 here so we never
         # overwrite a real sensor reading with a CSI stand-in.
         "sound_level": 0,
@@ -102,6 +144,7 @@ def post_to_backend():
         "heart_rate":     frame["heart_rate"],
         "n_persons":      frame["n_persons"],
         "rssi":           frame["rssi"],
+        "csi_nodes":      frame["csi_nodes"],
         "source":         "wifi_csi",
     }
 

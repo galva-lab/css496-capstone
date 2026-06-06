@@ -5,6 +5,9 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from datetime import datetime
 
+import people_counter
+import people_count_history
+
 app = FastAPI()
 
 app.add_middleware(
@@ -22,7 +25,6 @@ fake_database = []
 # Latest reading per source
 latest_by_source = {
     "wifi_csi":    None,
-    "esp32_node3": None,
     "esp32_node4": None,
 }
 
@@ -32,8 +34,16 @@ occupancy = {
     "presence_detected": False,
 }
 
-# Thresholds
-SOUND_SPIKE_THRESHOLD = 70  # dB level considered a high instantaneous sound
+# ── Sound spike detection (relative to a rolling baseline) ──────────────
+# The KY-037 reports a RELATIVE amplitude, not calibrated decibels. So instead
+# of an absolute dB threshold, we flag a SPIKE: a reading well above the room's
+# recent baseline. This auto-adapts to any room. Tune the constants below.
+SOUND_BASELINE_WINDOW = 15   # number of recent readings that define "normal"
+SOUND_SPIKE_MARGIN    = 6    # how far above baseline a reading must jump to spike
+SOUND_SPIKE_MIN       = 8    # ignore readings below this (noise floor, never a spike)
+
+sound_history = []                          # recent sound levels (rolling window)
+sound_state   = {"baseline": 0, "spike": False}
 
 def update_occupancy(motion: bool, sound_level: int):
     """Update simple presence flag based on current motion (CSI disturbance).
@@ -41,47 +51,70 @@ def update_occupancy(motion: bool, sound_level: int):
     """
     occupancy["presence_detected"] = bool(motion)
 
-def get_occupancy_alerts(gas: int, motion: bool, sound_level: int, presence_score: float = 0):
-    """Generate alerts based on raw sensor readings (no session/duration logic).
-    Keeps gas-based alerts and a raw sound-level threshold check.
+def detect_sound_spike(sound_level: int) -> dict:
+    """Flag a spike when sound jumps above the room's rolling baseline.
+    Baseline is the average of the PREVIOUS readings, so a single loud event
+    (clap, shout) stands out instead of needing a fixed, uncalibrated dB cutoff.
+    """
+    baseline = sum(sound_history) / len(sound_history) if sound_history else 0
+    spike = (sound_level >= SOUND_SPIKE_MIN) and (sound_level - baseline >= SOUND_SPIKE_MARGIN)
+
+    sound_history.append(sound_level)
+    if len(sound_history) > SOUND_BASELINE_WINDOW:
+        del sound_history[:-SOUND_BASELINE_WINDOW]
+
+    return {"baseline": round(baseline, 1), "spike": spike}
+
+def get_occupancy_alerts(gas: int, motion: bool, sound_level: int, sound_spike: bool = False, presence_score: float = 0):
+    """Generate alerts from current readings. Sound uses a relative SPIKE
+    (a sudden jump above the room baseline) rather than an absolute level,
+    because the KY-037 is not calibrated to real decibels.
     """
     alerts = []
     threat = "low"
 
-    # Immediate sound threshold
-    if sound_level >= SOUND_SPIKE_THRESHOLD:
-        alerts.append(f"High sound level detected ({sound_level} dB)")
-        threat = "high"
+    def escalate(level):
+        nonlocal threat
+        rank = {"low": 0, "medium": 1, "high": 2}
+        if rank[level] > rank[threat]:
+            threat = level
+
+    # Sudden sound spike above the room baseline = anomaly
+    if sound_spike:
+        alerts.append(f"Sound spike detected (level {sound_level}, above baseline)")
+        escalate("medium")
+        if motion:
+            alerts.append("Motion + sound spike - possible disturbance")
+            escalate("high")
 
     # Gas-based alerts
     if gas >= 400:
         alerts.append("Dangerous gas level detected")
-        threat = "high"
+        escalate("high")
     elif gas >= 250:
         alerts.append("Poor air quality detected")
-        if threat == "low":
-            threat = "medium"
+        escalate("medium")
 
     # Motion + gas immediate anomaly (no duration requirement)
     if motion and gas >= 300:
         alerts.append("Motion + gas anomaly detected")
-        if threat != "high":
-            threat = "high"
+        escalate("high")
 
     return {"threat_level": threat, "alerts": alerts}
 
 # ── Sensor fusion ──────────────────────────────────────────────
 def fuse_latest():
     csi   = latest_by_source.get("wifi_csi") or {}
-    node3 = latest_by_source.get("esp32_node3") or {}
+    node4 = latest_by_source.get("esp32_node4") or {}
     return {
         "motion":         csi.get("motion", False),
         "presence_score": csi.get("presence_score", 0),
         "heart_rate":     csi.get("heart_rate", 0),
         "n_persons":      csi.get("n_persons", 0),
         "rssi":           csi.get("rssi", 0),
-        "sound_level":    node3.get("sound_level") if node3 else csi.get("sound_level", 0),
-        "gas_level":      node3.get("gas_level")   if node3 else csi.get("gas_level", 0),
+        "csi_nodes":      csi.get("csi_nodes", 0),
+        "sound_level":    node4.get("sound_level") if node4 else csi.get("sound_level", 0),
+        "gas_level":      node4.get("gas_level")   if node4 else csi.get("gas_level", 0),
         "source": "fused",
     }
 
@@ -156,16 +189,27 @@ def receive_sensor_data(data: dict):
     sound_level = fused.get("sound_level", 0) or 0
     gas_level   = fused.get("gas_level", 0) or 0
 
+    # Update sound spike state only when fresh sound data arrives (node 4),
+    # so the same value isn't re-evaluated on every CSI post.
+    if source == "esp32_node4":
+        sound_state.update(detect_sound_spike(sound_level))
+
     # Update occupancy tracker
     update_occupancy(motion, sound_level)
 
-    # Attach occupancy snapshot to reading
+    # Attach occupancy + sound snapshot to reading
     fused["occupancy"] = {
         "presence_detected": occupancy.get("presence_detected", False),
     }
+    fused["sound_baseline"] = sound_state["baseline"]
+    fused["sound_spike"]    = sound_state["spike"]
+
+    # Occupancy estimate (smoothed + decaying — see people_counter.py)
+    fused["people"] = people_counter.update(fused)
+    people_count_history.record(fused["people"], fused)
 
     # Generate occupancy-aware alerts
-    analysis = get_occupancy_alerts(gas_level, motion, sound_level, fused.get("presence_score"))
+    analysis = get_occupancy_alerts(gas_level, motion, sound_level, sound_state["spike"], fused.get("presence_score"))
     fused["analysis"] = analysis
 
     fake_database.append(fused)
@@ -193,15 +237,38 @@ def get_latest():
 
 
 
+NODE_TIMEOUT_SECONDS = 30
+
 @app.get("/nodes")
 def get_nodes():
-    return {
-        source: {
-            "connected":   data is not None,
+    now = datetime.now()
+    result = {}
+    for source, data in latest_by_source.items():
+        if data is None:
+            connected = False
+        else:
+            try:
+                last_seen = datetime.fromisoformat(data["timestamp"])
+                connected = (now - last_seen).total_seconds() < NODE_TIMEOUT_SECONDS
+            except Exception:
+                connected = False
+        result[source] = {
+            "connected":   connected,
             "last_seen":   data.get("timestamp")  if data else None,
             "gas_level":   data.get("gas_level")   if data else None,
             "sound_level": data.get("sound_level") if data else None,
             "motion":      data.get("motion")      if data else None,
         }
-        for source, data in latest_by_source.items()
-    }
+    return result
+
+@app.get("/people-count")
+def people_count():
+    """Latest occupancy estimate (coarse — see people_counter.py)."""
+    if not fake_database:
+        return {"estimated_count": 0, "occupancy_level": "Empty"}
+    return fake_database[-1].get("people", {"estimated_count": 0, "occupancy_level": "Empty"})
+
+@app.get("/people-history")
+def people_history():
+    """Recent occupancy transitions (level changes over time)."""
+    return people_count_history.recent()

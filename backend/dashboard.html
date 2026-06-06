@@ -81,6 +81,7 @@
   .card.gas::before        { background: #ccaa00; }
   .card.gas-danger::before { background: #ff4444; }
   .card.sound::before      { background: #aa88ff; }
+  .card.sound-spike::before { background: #ff4444; animation: pulse 1s infinite; }
   .card.threat-low::before    { background: #00ff88; }
   .card.threat-medium::before { background: #ffaa00; }
   .card.threat-high::before   { background: #ff4444; }
@@ -116,6 +117,7 @@
   .log-motion-y { color: #00ff88; } .log-motion-n { color: #2a4a2a; }
   .log-hr  { color: #ff4466; } .log-br { color: #ffaa00; }
   .log-ps  { color: #00d4ff; } .log-gas { color: #ccaa00; }
+  .log-spike { color: #ff4444; font-weight: bold; }
   .log-dur { color: #00ff88; }
 
   #error-msg { display: none; background: #1a0000; border: 1px solid #440000; color: #ff4444; border-radius: 6px; padding: 10px 14px; font-size: 12px; margin-bottom: 16px; }
@@ -131,6 +133,8 @@
       <div class="nbadge" id="n2"><span class="dot"></span>ESP32 #2</div>
       <div class="nbadge" id="n3"><span class="dot"></span>ESP32 #3</div>
       <div class="nbadge" id="n4"><span class="dot"></span>ESP32 #4</div>
+      <div class="nbadge" id="n5"><span class="dot"></span>ESP32 #5</div>
+      <div class="nbadge" id="n6"><span class="dot"></span>ESP32 #6</div>
     </div>
     <div class="status-bar">
       <div class="dot" id="live-dot"></div>
@@ -153,28 +157,34 @@
 
 <div class="cards">
   <div class="card" id="card-motion">
-    <div class="node-tag">CSI #1+#2</div>
+    <div class="node-tag">CSI #1-3,5,6</div>
     <div class="card-label">Motion</div>
     <div class="card-value"><span class="motion-badge" id="motion-badge">--</span></div>
     <div class="card-unit" id="motion-sub">&nbsp;</div>
   </div>
   <div class="card presence">
-    <div class="node-tag">CSI #1+#2</div>
+    <div class="node-tag">CSI #1-3,5,6</div>
     <div class="card-label">Presence Score</div>
     <div class="card-value" id="val-presence">--</div>
     <div class="card-unit">Wi-Fi signal disturbance</div>
   </div>
   <div class="card gas" id="card-gas">
-    <div class="node-tag">MQ-135 #3</div>
+    <div class="node-tag">MQ-135 #4</div>
     <div class="card-label">Air Quality</div>
     <div class="card-value gas-ok" id="val-gas">--</div>
     <div class="card-unit" id="gas-unit">ppm index</div>
   </div>
-  <div class="card sound">
-    <div class="node-tag">KY-037 #3</div>
-    <div class="card-label">Noise Level</div>
+  <div class="card sound" id="card-sound">
+    <div class="node-tag">KY-037 #4</div>
+    <div class="card-label">Sound Level</div>
     <div class="card-value" id="val-sound" style="color:#aa88ff;">--</div>
-    <div class="card-unit">dB</div>
+    <div class="card-unit" id="sound-sub">relative &middot; baseline --</div>
+  </div>
+  <div class="card presence" id="card-occ">
+    <div class="node-tag">FUSED</div>
+    <div class="card-label">Occupancy (est.)</div>
+    <div class="card-value" id="val-occ" style="color:#00d4ff;">--</div>
+    <div class="card-unit" id="occ-sub">estimate</div>
   </div>
 </div>
 
@@ -241,6 +251,8 @@ async function fetchLatest() {
     const ps      = parseFloat((d.presence_score || 0).toFixed(1));
     const gas     = Math.round(d.gas_level || 0);
     const sound   = Math.round(d.sound_level || 0);
+    const soundSpike = d.sound_spike === true;
+    const soundBase  = (d.sound_baseline != null) ? d.sound_baseline : '--';
     const ts      = d.timestamp ? d.timestamp.slice(11,19) : '';
     const occ     = d.occupancy || {};
     const presenceDetected = occ.presence_detected || false;
@@ -260,7 +272,24 @@ async function fetchLatest() {
     document.getElementById('card-motion').className    = 'card' + (motion ? ' motion-on' : '');
     document.getElementById('motion-sub').textContent   = motion ? 'Wi-Fi disturbance detected' : 'No motion';
     document.getElementById('val-presence').textContent = ps;
-    document.getElementById('val-sound').textContent    = sound || '--';
+
+    // Occupancy estimate (coarse — smoothed + decaying)
+    const people = d.people || {};
+    document.getElementById('val-occ').textContent = (people.estimated_count != null) ? people.estimated_count : '--';
+    document.getElementById('occ-sub').textContent = people.occupancy_level ? ('~ ' + people.occupancy_level) : 'estimate';
+
+    // Sound: relative level + spike-vs-baseline (not calibrated dB)
+    const soundEl = document.getElementById('val-sound');
+    soundEl.textContent = sound;
+    if (soundSpike) {
+      document.getElementById('card-sound').className  = 'card sound sound-spike';
+      document.getElementById('sound-sub').textContent = '⚠ SPIKE — above baseline ' + soundBase;
+      soundEl.style.color = '#ff4444';
+    } else {
+      document.getElementById('card-sound').className  = 'card sound';
+      document.getElementById('sound-sub').textContent = 'relative · baseline ' + soundBase;
+      soundEl.style.color = '#aa88ff';
+    }
 
     const gasEl = document.getElementById('val-gas');
     gasEl.textContent = gas || '--';
@@ -279,11 +308,14 @@ async function fetchLatest() {
       if (nr.ok) {
         const nodes = await nr.json();
         const csi = nodes.wifi_csi && nodes.wifi_csi.connected;
-        const n3  = nodes.esp32_node3 && nodes.esp32_node3.connected;
-        const n4  = nodes.esp32_node4 && nodes.esp32_node4.connected;
-        setNode('n1', csi); setNode('n2', csi); setNode('n3', n3); setNode('n4', n4);
+        const n4  = (nodes.esp32_node4 && nodes.esp32_node4.connected) ||
+                    (nodes.esp32_node3 && nodes.esp32_node3.connected);
+        // Light the CSI badges (#1-3,5,6) by how many boards are actually streaming
+        const csiCount = csi ? (d.csi_nodes || 0) : 0;
+        ['n1','n2','n3','n5','n6'].forEach((id, i) => setNode(id, i < csiCount));
+        setNode('n4', n4);
       }
-    } catch(e) { setNode('n1', true); setNode('n2', false); setNode('n3', false); setNode('n4', false); }
+    } catch(e) { setNode('n1', false); setNode('n2', false); setNode('n3', false); setNode('n4', false); }
 
   } catch(e) {
     setLive(false);
@@ -304,12 +336,13 @@ async function fetchLogs() {
       const ps      = parseFloat((d.presence_score || 0).toFixed(1));
       const gas     = Math.round(d.gas_level || 0);
       const sound   = Math.round(d.sound_level || 0);
+      const sSpike  = d.sound_spike === true;
       return `<div class="log-row">
         <span class="log-ts">${ts}</span>
         <span class="${motion?'log-motion-y':'log-motion-n'}">${motion?'YES':'no'}</span>
         <span class="log-ps">${ps||'--'}</span>
         <span class="log-gas">${gas||'--'}</span>
-        <span class="log-gas">${sound||'--'}</span>
+        <span class="${sSpike?'log-spike':'log-gas'}">${sSpike?('⚠ '+sound):sound}</span>
       </div>`;
     }).join('');
   } catch(e) {}
