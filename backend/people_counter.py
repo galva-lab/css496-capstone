@@ -52,8 +52,11 @@ def _f(name, default):
 
 
 # ── Tunable config (overridable via backend/.env) ───────────────────────────
-PRESENCE_OCCUPIED = _f("PRESENCE_OCCUPIED", 1.0)   # presence_score => at least 1 person
-PRESENCE_BUSY     = _f("PRESENCE_BUSY", 3.0)       # strong disturbance => likely >1
+PRESENCE_OCCUPIED = _f("PRESENCE_OCCUPIED", 7.0)   # presence_score => at least 1 person
+                                                     # (raised because empty room reads ~5-6)
+PRESENCE_BUSY     = _f("PRESENCE_BUSY", 14.0)      # strong disturbance => likely >1
+                                                     # (default very high because 1 active person
+                                                     #  can already score 10-15)
 SMOOTHING_ALPHA   = _f("SMOOTHING_ALPHA", 0.4)     # EMA weight for newest reading (0..1)
 DECAY_AFTER_SEC   = _f("DECAY_AFTER_SEC", 8)       # idle seconds before estimate decays
 DECAY_STEP        = _f("DECAY_STEP", 1.0)          # drop per inactive update
@@ -81,22 +84,37 @@ def _level_for(count: int) -> str:
 
 
 def _raw_estimate(motion, presence_score, n_persons, sound_spike):
-    """Instantaneous, un-smoothed estimate from a single reading."""
-    # Trust the CSI people-count when it actually reports someone.
-    if n_persons and n_persons > 0:
-        base = min(n_persons, MAX_COUNT)
-    else:
-        # Evidence-based fallback from motion / presence disturbance.
-        if not motion and presence_score < PRESENCE_OCCUPIED and not sound_spike:
-            base = 0
-        elif presence_score >= PRESENCE_BUSY:
-            base = 2
-        else:
-            base = 1
+    """Instantaneous, un-smoothed estimate from a single reading.
 
-    # A loud spike while someone is moving suggests active / multiple people.
-    if sound_spike and motion and base >= 1:
-        base = min(base + 1, MAX_COUNT)
+    CRITICAL: RuView's n_persons is hard-clamped to [1, 4] and structurally
+    incapable of reporting 0.  We therefore do NOT trust it as standalone
+    evidence — it is only used as a refinement when motion or presence_score
+    already proves someone is actually in the room.
+
+    Additionally, a single very active person can drive presence_score just as
+    high as two quiet people.  We therefore only declare >1 person when there
+    is MULTI-MODAL evidence (motion + high presence + sound spike), keeping
+    the estimator honest about its limitations.
+    """
+    # Genuine presence: do NOT trust motion as standalone evidence.
+    # CSI "motion" is noisy — an empty room can still read motionEnergy > 0
+    # when the adaptive baseline drifts.  We therefore require a strong enough
+    # presence_score (the more reliable signal) to declare someone is here.
+    genuine_presence = presence_score >= PRESENCE_OCCUPIED or sound_spike
+
+    if not genuine_presence:
+        base = 0
+    elif presence_score >= PRESENCE_BUSY and sound_spike:
+        # Multi-modal consensus: strong CSI disturbance + loud noise
+        # is the ONLY combination we trust for >1 person.
+        base = max(2, min(n_persons, MAX_COUNT)) if n_persons else 2
+    elif presence_score >= PRESENCE_BUSY:
+        # High presence but no sound spike = 1 very active person.
+        base = 1
+    else:
+        # Weak / moderate presence: exactly 1 person.
+        base = 1
+
     return base
 
 
@@ -114,7 +132,7 @@ def update(reading: dict) -> dict:
     sound_spike    = bool(reading.get("sound_spike"))
 
     raw = _raw_estimate(motion, presence_score, n_persons, sound_spike)
-    active = motion or sound_spike or presence_score >= PRESENCE_OCCUPIED or raw > 0
+    active = sound_spike or presence_score >= PRESENCE_OCCUPIED or raw > 0
 
     if active:
         _state["last_activity"] = now

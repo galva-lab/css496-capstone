@@ -1,0 +1,2202 @@
+INFO:     Started server process [24344]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=22.95 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50062 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=22.9 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50063 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=20.75 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50064 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50065 - "GET / HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=21.09 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50066 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=22.13 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50067 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=21.68 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50072 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=20.65 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50073 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=20.91 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50074 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=20.68 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50075 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=20.38 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50076 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50077 - "GET /latest HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=19.91 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50078 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=19.3 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50081 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50082 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=17.29 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50089 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50091 - "GET /latest HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=14.87 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50092 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=13.28 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50093 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50095 - "GET /latest HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=9.3 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50096 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=9.43 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50097 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=12.06 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50098 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=14.45 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50099 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=12.89 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50100 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=12.4 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50101 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=12.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50102 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=12.52 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50103 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=11.81 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50104 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=11.74 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50106 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=12.42 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50107 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=12.33 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50109 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=12.7 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50110 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50111 - "GET /latest HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=13.41 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50112 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=14.95 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50113 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50114 - "GET /latest HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=16.43 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50115 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=19.5 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50116 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50117 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=21.2 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50118 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50121 - "GET /latest HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=20.66 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50122 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=19.98 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50128 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50129 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=21.17 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50134 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50137 - "GET /latest HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=20.63 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50138 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=19.29 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50142 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50143 - "GET /latest HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=19.24 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50144 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=19.76 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50147 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50148 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=16.46 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50151 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50152 - "GET /latest HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=17.91 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50154 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=16.57 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50158 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50159 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=14.15 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50161 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50162 - "GET /latest HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=12.46 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50163 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=11.63 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50164 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=10.72 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50165 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=10.11 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50166 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=10.54 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50167 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=13.02 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50168 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=24.32 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50169 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=25.42 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50170 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=30.11 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50178 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=29.19 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50180 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=30.92 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50181 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=29.18 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50182 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=24.85 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50183 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=21.89 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50184 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=20.88 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50185 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=19.09 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50187 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=17.58 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50188 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=18.6 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50189 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=20.49 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50192 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=24.93 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50196 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=26.83 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50197 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=24.57 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50203 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=25.32 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50205 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=26.4 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50206 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=29.23 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50207 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=30.93 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50208 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=30.51 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50209 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=29.77 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50210 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=29.21 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50211 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=28.81 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50214 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=29.89 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50215 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=28.25 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50216 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=32.4 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50217 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=33.83 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50218 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=30.89 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50219 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=27.43 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50220 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=22.43 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50221 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=18.82 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50222 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=17.38 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50223 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=18.75 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50230 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=17.91 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50238 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=15.18 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50244 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=13.25 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50246 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=11.65 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50248 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=10.46 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50249 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=9.8 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50250 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=9.26 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50251 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.83 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50252 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.75 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50254 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.61 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50255 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.66 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50256 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50257 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.56 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50258 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50259 - "GET /latest HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.53 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50260 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.6 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50261 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50262 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.58 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50265 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50270 - "GET /latest HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.33 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50271 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.3 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50274 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50277 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.44 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50278 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50279 - "GET /latest HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.5 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50280 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.46 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50281 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50282 - "GET /latest HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.35 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50284 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.46 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50286 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50287 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.55 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50288 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50289 - "GET /latest HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.34 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50290 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.21 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50291 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50292 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.12 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50293 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50294 - "GET /latest HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.17 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50295 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.15 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:50298 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.29 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60865 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.36 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60866 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.25 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60867 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.19 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60868 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.13 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60869 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.13 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60870 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.24 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60871 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.37 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60872 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.56 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60873 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.56 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60874 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.52 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60875 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.85 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60876 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.65 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60877 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.62 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60882 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.56 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60883 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.53 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60884 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.48 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60885 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.42 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60886 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.44 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60887 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.4 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60888 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.46 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60889 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.56 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60890 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.7 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60891 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.61 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60892 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.54 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60895 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.59 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60898 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.6 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60899 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.44 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60900 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.39 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60901 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.19 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60902 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.16 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60903 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.25 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60904 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.42 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60905 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.48 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60906 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.39 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60907 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.24 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60908 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.34 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60909 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.37 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60912 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.49 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60913 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.6 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60914 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.52 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60915 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.46 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60916 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.38 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60917 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.28 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60918 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.16 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60919 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.11 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60920 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.1 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60921 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.19 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60922 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.22 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60924 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.12 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60933 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.08 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60934 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=5.65 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60935 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=6.36 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60936 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=6.96 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60937 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=7.3 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60938 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=7.57 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60941 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=7.74 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60942 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=7.96 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60943 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.1 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60944 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.29 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60947 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.32 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60948 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.4 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60949 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.63 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60950 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.42 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60951 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.41 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60952 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.47 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60953 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.53 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60954 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.72 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60955 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.67 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60956 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.58 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60957 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.46 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60958 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.39 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60959 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.37 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60960 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.37 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60965 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.39 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60967 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.33 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60968 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.3 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60969 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.34 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60970 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.23 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60971 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.19 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60972 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.14 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60973 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.21 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60974 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.24 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60975 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.35 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60976 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.58 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60977 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.59 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60978 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.46 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60981 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.36 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60982 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.38 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61657 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.49 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61658 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.49 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61659 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.4 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61660 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.3 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61661 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.4 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61662 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.49 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61663 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.36 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61664 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.37 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61665 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.3 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61666 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.22 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61667 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.34 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61671 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.42 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61672 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.31 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61673 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.42 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61674 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.37 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61677 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.2 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61678 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.02 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61680 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.24 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61682 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.28 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61683 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.2 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61688 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.3 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61702 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.46 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61706 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.45 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61709 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.58 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61711 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.38 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61721 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.33 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61727 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.45 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61735 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.5 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:58715 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.46 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:58718 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.38 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:58725 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.32 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60135 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.37 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60141 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.34 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60144 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.35 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60148 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.34 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60154 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.27 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60159 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.21 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60167 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.33 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60178 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=5.83 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60182 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=6.52 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60187 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=7.11 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60190 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=7.53 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60192 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=7.65 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60198 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.06 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60203 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.23 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60210 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.36 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60215 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.48 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60217 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.3 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60218 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.35 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60219 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.42 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60220 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.43 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60221 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.4 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60222 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.35 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60224 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.33 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60225 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.39 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60226 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.43 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60227 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.46 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60228 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.52 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60229 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.46 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60230 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.42 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60233 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.44 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60234 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.36 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60235 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.37 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60236 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.33 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60237 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.3 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60238 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.15 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60239 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.04 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60240 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=7.99 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60241 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.08 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60242 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.12 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60243 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.14 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60244 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.28 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60245 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.16 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60246 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.29 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60247 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.48 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60248 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.56 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60249 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.41 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60250 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.38 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60251 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.41 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60252 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.44 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60253 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.4 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60254 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.4 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60255 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.38 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60256 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.43 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60257 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.44 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60258 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.55 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60259 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.61 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60260 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.37 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60261 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.32 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60264 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.4 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60265 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.55 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60268 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.51 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60269 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.48 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60270 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.4 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60271 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.36 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60272 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60273 - "GET /latest HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.4 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60274 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.59 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60276 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.67 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60278 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.56 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60279 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.61 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60280 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.51 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60281 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.52 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60282 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.6 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60283 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.71 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60288 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.75 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60291 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.63 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60292 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.54 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60293 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.51 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60294 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.28 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60304 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.37 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60307 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.5 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60308 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.49 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60309 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.52 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60310 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.42 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60311 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.45 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60312 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.44 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60313 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.61 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60314 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.55 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60315 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.49 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60316 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.48 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60317 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.51 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60318 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.46 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60321 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.34 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60322 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.35 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60323 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.43 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60324 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.53 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60325 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.5 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60326 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.53 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60327 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.35 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60328 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.23 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60329 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.25 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60330 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.29 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60331 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.28 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60332 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.17 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60333 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.31 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60334 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.39 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60335 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.33 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60336 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.25 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60337 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.23 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60338 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.35 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60339 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.45 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60340 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.53 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60341 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.43 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60342 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.37 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60343 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.38 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60344 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.47 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60345 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.55 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60346 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.6 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60354 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.54 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:56985 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.38 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:56986 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=9.65 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:56987 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=17.36 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:56988 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=23.73 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:56991 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=24.36 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:56992 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=23.32 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:56993 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=22.06 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:56994 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=20.92 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:56995 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=23.73 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:56996 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=28.07 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:57000 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=25.33 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:57001 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=20.98 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:57008 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=21.39 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60992 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=18.72 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60993 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=19.67 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60997 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=23.36 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:60999 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=26.33 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61000 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=31.23 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61001 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=31.74 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61004 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=31.52 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61005 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=26.4 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61007 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61008 - "POST /sensor-data HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=24.16 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61009 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61010 - "POST /sensor-data HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=30.1 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61011 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61012 - "POST /sensor-data HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=32.65 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61013 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61014 - "POST /sensor-data HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=33.79 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61015 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61016 - "POST /sensor-data HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=31.77 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61017 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61018 - "POST /sensor-data HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=32.26 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61019 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61020 - "POST /sensor-data HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=33.2 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61021 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61022 - "POST /sensor-data HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=26.28 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61023 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61024 - "POST /sensor-data HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=21.41 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61025 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61026 - "POST /sensor-data HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=19.6 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61027 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61029 - "POST /sensor-data HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=23.83 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61030 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61031 - "POST /sensor-data HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=23.63 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61032 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61033 - "POST /sensor-data HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=19.91 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61034 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61035 - "POST /sensor-data HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=20.22 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61036 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61039 - "POST /sensor-data HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=18.88 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61040 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61041 - "POST /sensor-data HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=19.12 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61042 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61043 - "POST /sensor-data HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=19.29 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61044 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61045 - "POST /sensor-data HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=17.51 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61046 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61047 - "POST /sensor-data HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=15.97 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61048 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61049 - "POST /sensor-data HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=14.4 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61050 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61051 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=17.79 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61052 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61053 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=23.66 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61054 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61055 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=22.98 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61056 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61058 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=19.36 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61059 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61060 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=16.98 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61061 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61062 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=14.69 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61063 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61065 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=13.51 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61066 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61067 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=12.54 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61068 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61069 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=11.91 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61070 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61072 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=11.2 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61073 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61074 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=18.01 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61075 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61076 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=23.33 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61077 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61078 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=21.96 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61079 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61080 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=17.75 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61081 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61084 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=14.74 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61085 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61086 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=12.8 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61087 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61088 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=11.4 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61089 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61092 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=10.32 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61093 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61094 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=9.81 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61095 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61096 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=9.56 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61097 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61098 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=9.3 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61099 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61101 - "POST /sensor-data HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=9.09 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61102 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61103 - "POST /sensor-data HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.97 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61104 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61105 - "POST /sensor-data HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.8 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61106 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61107 - "POST /sensor-data HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.61 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61108 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61110 - "POST /sensor-data HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.5 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61111 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61112 - "POST /sensor-data HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.51 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61113 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61114 - "POST /sensor-data HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.44 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61115 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61116 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.4 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61117 - "POST /sensor-data HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61118 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.36 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61119 - "POST /sensor-data HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61120 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.39 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61121 - "POST /sensor-data HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61122 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.49 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61123 - "POST /sensor-data HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61124 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.4 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61125 - "POST /sensor-data HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61128 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.17 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61130 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61132 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.17 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61133 - "POST /sensor-data HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61134 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.18 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61135 - "POST /sensor-data HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61136 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /nodes HTTP/1.1" 200 OK
+[wifi_csi] motion=True presence=True ps=8.18 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61137 - "POST /sensor-data HTTP/1.1" 200 OK
+[wifi_csi] motion=False presence=False ps=0.0 sound=0 gas=0 threat=low
+INFO:     127.0.0.1:61138 - "POST /sensor-data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /latest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62191 - "GET /nodes HTTP/1.1" 200 OK

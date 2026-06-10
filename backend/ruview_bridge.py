@@ -27,7 +27,9 @@ UPDATE_INTERVAL = 2             # seconds between FastAPI POSTs
 # Per-board presence score that counts as "active". Your empty room reads noisy
 # and high (3-15), so this MUST be tuned to your environment — raise it until an
 # empty room stops triggering. Use scripts/calibration_logger.py to find it.
-PRESENCE_THRESH = 3.0
+# SYNC with people_counter.py PRESENCE_OCCUPIED so motion only fires when
+# someone is genuinely present.
+PRESENCE_THRESH = 7.0
 # Consensus: how many boards must agree before we declare motion. With multiple
 # boards this outvotes single-board noise (the key to "more nodes = reliable").
 MOTION_MIN_NODES = 2
@@ -160,7 +162,7 @@ def post_to_backend():
 
 def main():
     print("=" * 55)
-    print("  RuView → FastAPI Bridge")
+    print("  RuView -> FastAPI Bridge")
     print(f"  Backend : {BACKEND_URL}")
     print(f"  UDP port: {RUVIEW_PORT}")
     print(f"  Interval: every {UPDATE_INTERVAL}s")
@@ -168,8 +170,10 @@ def main():
     print("[bridge] Starting rf-scan.js...")
 
     # Start rf-scan.js as a subprocess with JSON output
+    # rf-scan.js lives in the external RuView framework directory.
+    rf_scan_path = r"C:\Users\Branm\OneDrive\Documents\School\Spring 26\CSS 496\Ruview\RuView\scripts\rf-scan.js"
     proc = subprocess.Popen(
-        ["node", "scripts/rf-scan.js", "--port", str(RUVIEW_PORT), "--json"],
+        ["node", rf_scan_path, "--port", str(RUVIEW_PORT), "--json"],
         stdout=subprocess.PIPE,
         stderr=subprocess.DEVNULL,
         text=True,

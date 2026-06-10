@@ -3,6 +3,7 @@ import os
 import sqlite3
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import StreamingResponse
 from datetime import datetime
 
 import people_counter
@@ -272,3 +273,35 @@ def people_count():
 def people_history():
     """Recent occupancy transitions (level changes over time)."""
     return people_count_history.recent()
+
+
+@app.get("/export-csv")
+def export_csv(limit: int = 0):
+    """Export the full SQLite history as a downloadable CSV.
+    Set ?limit=N to cap the number of rows (most recent first).
+    """
+    import io
+
+    conn = sqlite3.connect(get_db_path())
+    cursor = conn.execute("SELECT * FROM sensor_logs ORDER BY id DESC")
+    rows = cursor.fetchall()
+    conn.close()
+
+    if limit > 0:
+        rows = rows[:limit]
+    rows.reverse()  # chronological order in the file
+
+    output = io.StringIO()
+    writer = csv.writer(output)
+    writer.writerow([
+        "id", "timestamp", "source", "motion", "sound_level", "gas_level",
+        "presence_score", "heart_rate", "rssi", "threat_level", "alerts"
+    ])
+    writer.writerows(rows)
+    output.seek(0)
+
+    return StreamingResponse(
+        io.BytesIO(output.getvalue().encode("utf-8")),
+        media_type="text/csv",
+        headers={"Content-Disposition": "attachment; filename=sensor_logs_export.csv"}
+    )

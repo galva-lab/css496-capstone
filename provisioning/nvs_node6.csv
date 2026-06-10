@@ -1,0 +1,7 @@
+key,type,encoding,value
+csi_cfg,namespace,,
+ssid,data,string,lucky plaza
+password,data,string,homesweethome2
+target_ip,data,string,10.0.0.145
+node_id,data,u8,6
+filter_mac,data,hex2bin,721301840459

@@ -1,0 +1,10 @@
+=======================================================
+Traceback (most recent call last):
+  File "C:\Users\Branm\OneDrive\Documents\School\Spring 26\CSS 496\Capstone\backend\ruview_bridge.py", line 200, in <module>
+    main()
+  File "C:\Users\Branm\OneDrive\Documents\School\Spring 26\CSS 496\Capstone\backend\ruview_bridge.py", line 165, in main
+    print("  RuView \u2192 FastAPI Bridge")
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 9: character maps to <undefined>

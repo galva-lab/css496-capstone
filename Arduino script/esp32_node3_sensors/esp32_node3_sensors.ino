@@ -4,7 +4,7 @@
 
 const char* ssid = SECRET_WIFI_SSID;
 const char* password = SECRET_WIFI_PASS;
-const char* serverIP = "10.229.208.187";
+const char* serverIP = "10.0.0.145";
 const int serverPort = 8000;
 
 const int GAS_PIN = 4;
